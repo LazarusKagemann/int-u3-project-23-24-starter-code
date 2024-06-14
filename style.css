@@ -76,43 +76,12 @@ button:hover {
     background-color: #0056b3;
 }
 
-/* Style the screens for option one and option two */
-.option-one-screen,
-.option-two-screen,
-.option-one-end,
-.option-two-end {
-    background-color: #fff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-    margin-bottom: 10px;
-}
-
-/* Style the images in the screens */
-.option-one-screen img,
-.option-two-screen img,
-.option-one-end img,
-.option-two-end img {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: 10px;
-}
-
-/* Style the text in the screens */
-.option-one-screen h1,
-.option-two-screen h1,
-.option-one-end h1,
-.option-two-end h1 {
-    font-size: 20px;
-    margin-bottom: 20px;
-}
-
 #o1,#o2{
     cursor: pointer;
 }
 
 image{
-    width:auto;
-    height:auto;
+    max-width: 100%;
+    height: auto;
+    width: auto\9; /* ie8 */
 }
