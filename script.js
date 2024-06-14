@@ -69,7 +69,7 @@ var choices = {
         ]
     },
     CA: {
-        message: "The ghoul declines. You die.",
+        message: "The ghoul offers his best rates - death. Your bones are scraped clean by the desolate wind.",
         image: "deathscreen.png",
         options: []
     },
