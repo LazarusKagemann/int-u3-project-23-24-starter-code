@@ -26,11 +26,11 @@ var choices = {
         options: []
     },
     AC: {
-        message: "You stumble upon an abandoned building.",
-        image: "wasteland.png",
+        message: "You run into a ghoul.",
+        image: "harold.jpg",
         options: [
             {
-                text: "Investigate",
+                text: "Inquire about car insurance",
                 nextKey: "CA"
             },
             {
@@ -69,8 +69,8 @@ var choices = {
         ]
     },
     CA: {
-        message: "You step inside and run into a ghoul. You die.",
-        image: "harold.jpg",
+        message: "The ghoul declines. You die.",
+        image: "deathscreen.png",
         options: []
     },
     CB: {
