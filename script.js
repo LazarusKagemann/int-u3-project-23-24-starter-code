@@ -12,22 +12,27 @@ const textElement = document.getElementById('text')
 
 
 
-var choices = {
+let choices = {
     AA: {
-        message: "Message for AA",
-        options: ["Choice 1 for AA", "Choice 2 for AA"],
+        message: "You feel a tingling sensation in your head. Flecks of dust and dirt are blown across your face by the harsh winds of the wasteland.",
+        options: ["Stay.", "Explore."],
         nextKey: "AB"
     },
     AB: {
-        message: "Message for AB",
+        message: "You rest and feel better.",
         options: ["Choice 1 for AB", "Choice 2 for AB"],
         nextKey: "BA"
     },
     BA: {
-        message: "Message for BA",
-        options: ["Choice 1 for BA", "Choice 2 for BA"]
+        message: "You found a gas station",
+        options: ["Explore", "Leave"],
+        nextKey: "AA"
     }
 };
+
+textElement.innerText = choices["AA"].message;
+o1.textContent = choices["AA"].options[0];
+o2.textContent = choices["AA"].options[1];
 
 var currentKey = "AA"; // Starting key
 
@@ -36,7 +41,7 @@ function ask(key) {
     textElement.innerText = currentChoice.message;
     o1.textContent = currentChoice.options[0];
     o2.textContent = currentChoice.options[1];
-    // You may want to check if `currentChoice.nextKey` exists before assigning it.
+
     currentKey = currentChoice.nextKey; // Update current key for next iteration
 }
 
@@ -46,7 +51,7 @@ function ask(key) {
 
 
 o2.addEventListener("click", function(){
-
+    ask(choices[currentKey].nextKey);
 //
     
 });
