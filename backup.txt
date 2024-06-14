@@ -8,7 +8,6 @@ const textElement = document.getElementById('text');
 var choices = {
     AA: {
         message: "You feel a tingling sensation in your head. Flecks of dust and dirt are blown across your face by the harsh winds of the wasteland.",
-        image: "wasteland.png",
         options: [
             {
                 text: "Stay",
@@ -22,12 +21,10 @@ var choices = {
     },
     AB: {
         message: "You lay back down and rest for the night. You'll feel much better in the morning.",
-        image: "wasteland.png",
         options: []
     },
     AC: {
         message: "You stumble upon an abandoned building.",
-        image: "wasteland.png",
         options: [
             {
                 text: "Investigate",
@@ -41,7 +38,6 @@ var choices = {
     },
     BA: {
         message: "Message for BA",
-        image: "wasteland.png",
         options: [
             {
                 text: "Choice 1 for BA",
@@ -53,10 +49,8 @@ var choices = {
             }
         ]
     },
-
     BB: {
         message: "Message for BB",
-        image: "wasteland.png",
         options: [
             {
                 text: "Choice 1 for BB",
@@ -70,22 +64,19 @@ var choices = {
     },
     CA: {
         message: "You step inside and run into a ghoul. You die.",
-        image: "harold.jpg",
         options: []
     },
     CB: {
         message: "You run away to live another day.",
-        image: "wasteland.png",
         options: []
     },
     end: {
         message: "This is the end of your adventure. Thank you for playing!",
-        image: "wasteland.png",
         options: []
     }
 };
 
-// Function to update the text, image, and options based on the current key
+// Function to update the text and options based on the current key
 function updateScene(key) {
     var currentChoice = choices[key];
     if (!currentChoice) {
@@ -94,7 +85,6 @@ function updateScene(key) {
     }
     
     textElement.innerText = currentChoice.message;
-    image.src = currentChoice.image;
 
     if (currentChoice.options.length === 0) {
         o1.style.display = 'none';

@@ -108,3 +108,6 @@ button:hover {
     margin-bottom: 20px;
 }
 
+#o1,#o2{
+    cursor: pointer;
+}
