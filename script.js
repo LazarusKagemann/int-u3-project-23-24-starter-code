@@ -60,3 +60,31 @@ o2.addEventListener("click", function(){
 // INSERT_VARIABLE.addEventListener('click', function(){
 
 // });
+
+/*var choices = {
+    AA: {
+        message: "Message for AA",
+        options: [
+            {
+                text: "Choice A",
+                nextKey: "AB"
+            },
+            {
+                text: "Choice B",
+                nextKey: "AC"
+            }
+        ]
+    },
+    AB: {
+        message: "Message for AB",
+        options: ["Choice 1 for AB", "Choice 2 for AB"],
+        nextKey: "BA"
+    },
+    AC: {
+        message: "Message for AC",
+        options: ["Choice 1 for AC", "Choice 2 for AC"],
+        nextKey: "BC"
+    },
+
+};
+*/
